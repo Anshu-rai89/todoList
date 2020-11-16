@@ -64,3 +64,18 @@ console.log(person);
 #### 7 What is Pure Components ?
 #### 8 Why do we pass callback function with seState ?
 #### 9 What is Strict Mode In React ? 
+
+#### 10 What is the euivalent React Code(JSX) for bellow Code ?
+
+    `const  element=React.createElement('h1',
+    {"className":"greetings"},
+    "Hello world");
+    
+    
+#### 11 What is ReactDOM and what is the difference between ReactDOM and React?
+
+#### 12 What is a higher order component?
+
+#### 13 What is render() in React? And explain its purpose?
+
+#### 14 What are controlled and uncontrolled components in React?

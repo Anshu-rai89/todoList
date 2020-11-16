@@ -79,3 +79,20 @@ console.log(person);
 #### 13 What is render() in React? And explain its purpose?
 
 #### 14 What are controlled and uncontrolled components in React?
+
+#### 15 What are the benefit of WebPack ?
+#### 16 What are the lifecycle methods of React?
+
+#### 17 What is reconciliation?
+#### 18 What will following code do ?
+    render() {
+     return <button onClick={this.handleClick()}>{'Click Me'}</button>
+    }
+    
+- Will return a Button ELement
+- Will call render multiple times which lead to error
+- Will Give error on Clicking on Button
+- Syntex Error 
+
+#### 19 Why is Lazy Loading ?
+#### 20 What is the impact of indexes as keys?

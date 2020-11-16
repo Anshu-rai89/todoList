@@ -59,4 +59,8 @@ console.log(person);
 -  Both 1 & 2
 -  None of above
 
-#### What is Virtual Dom ?
+#### 6 What is Virtual Dom ?
+
+#### 7 What is Pure Components ?
+#### 8 Why do we pass callback function with seState ?
+#### 9 What is Strict Mode In React ? 

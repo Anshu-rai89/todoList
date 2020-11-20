@@ -1,5 +1,5 @@
 import React, { Component } from 'react';
-import {Task} from './components/task';
+import Task from './components/task';
 class App extends Component {
 
   constructor(props){

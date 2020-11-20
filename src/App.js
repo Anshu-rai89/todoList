@@ -1,11 +1,12 @@
 import React, { Component } from 'react';
 import Task from './components/task';
+import {addtask} from './actions';
+import {connect} from 'react-redux';
 class App extends Component {
 
   constructor(props){
     super(props);
     this.state={
-      tasks:[],
       task:''
     }
     
@@ -17,15 +18,16 @@ class App extends Component {
   }
 
   handleClick=()=>{
-    const {task,tasks}=this.state;
+    const {task}=this.state;
     // check if task is empty
 
     if(task===''){alert("task is empty")}
 
     else{
-     tasks.push(task);
-    // if not add this task in tasks array
-    this.setState({tasks:tasks});
+      console.log('dispatch',this.props);
+     this.props.dispatch(addtask(task));
+    
+   
     }
 
   }
@@ -35,9 +37,11 @@ class App extends Component {
 
   }
   render() {
-   const {task,tasks}=this.state;
+   const {task}=this.state;
+   const {tasks}=this.props;
+   console.log('dispatch',this.props);
     console.log('task',task);
-    console.log("tasks",tasks);
+
     return (
       <div style={{margin:'10%'}}>
         
@@ -51,4 +55,11 @@ class App extends Component {
   }
 }
 
-export default App;
+function mapStateToProps(state){
+  return {
+    tasks:state.tasks,
+    value:state.value
+  }
+}
+
+export default connect (mapStateToProps)(App);

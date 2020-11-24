@@ -96,3 +96,18 @@ console.log(person);
 
 #### 19 Why is Lazy Loading ?
 #### 20 What is the impact of indexes as keys?
+
+
+## Redux Quiz
+
+
+#### 1 What is Redux ?
+#### 2 What is FLUX ?
+#### 3 Can we update State Directly ?
+#### 4 Do we need to keep all state in Redux Store ?
+#### 5 What are reducers in redux?
+#### 6 What are the core principles of Redux?
+#### 7 What is Redux Thunk?
+#### 9 What is React Context ?
+#### 10 What is the difference between React context and React redux?
+#### 11 What is Provider & Consumer ?

@@ -111,3 +111,116 @@ console.log(person);
 #### 9 What is React Context ?
 #### 10 What is the difference between React context and React redux?
 #### 11 What is Provider & Consumer ?
+
+
+## Scope Closures Quiz
+
+#### 1 . What kind of scoping does JavaScript use?
+- Literal
+- Lexical
+- Segmental
+- Sequential 
+
+#### 2 What must be done in order to implement Lexical Scoping?
+- Get the object
+- Dereference the current scope chain
+- Reference the current scope chain
+- Return the value
+
+#### 3 What is closure?
+- Function objects
+- Scope where function’s variables are resolved
+- Both Function objects and Scope where function’s variables are resolved
+- Function return value
+
+#### 4 What will be the function of the following JavaScript code?
+
+    var scope = "global scope";
+    function checkscope() 
+     {
+        var scope = "local scope"; 
+        function f() 
+        { 
+         return scope; 
+        }
+       return f;
+     }
+     
+- Returns value null
+- Returns exception
+- Returns the value in scope
+- Shows an error message
+
+#### 5 What will be output of this code 
+
+    var person = {
+    name: 'Dave',
+    weight: 100,
+    height: 180,
+    calculateBMI: function() {
+        console.log(this);
+        function innerFunction() {
+            console.log(this);
+        }
+        innerFunction();
+    }
+    }
+    person.calculateBMI()
+#### 6 What is output ?
+     var myObject = {
+        foo: "bar",
+        func: function() {
+            var self = this;
+            console.log("outer func:  this.foo = " + this.foo);
+            console.log("outer func:  self.foo = " + self.foo);
+            (function() {
+                console.log("inner func:  this.foo = " + this.foo);
+                console.log("inner func:  self.foo = " + self.foo);
+            }());
+        }
+    };
+    myObject.func();
+    
+#### 7 
+     
+     var outer='outer'
+     function foo(){
+       var outer='inside function'
+       if(3<5){
+       let b=5
+       }
+       console.log(outer,b)
+       }
+      foo()
+#### 7  What is output ?
+      for (var i=1; i<=5; i++) {
+     setTimeout( function timer(){
+         console.log( i );
+     }, i*1000 );
+     }
+    
+#### 8 what is output ?
+    for (let i=1; i<=5; i++) {
+       setTimeout( function timer(){
+           console.log( i );
+       }, i*1000 );
+    }
+    
+#### 9 What is the output ?
+    (function(){
+      var a = b = 3;
+    })();
+
+    console.log(b)
+    
+#### 10 What is the output ?
+
+    var hero = {
+        _name: 'John Doe',
+        getSecretIdentity: function (){
+            return this._name;
+        }
+    };
+
+    var stoleSecretIdentity = hero.getSecretIdentity;
+    

@@ -223,4 +223,53 @@ console.log(person);
     };
 
     var stoleSecretIdentity = hero.getSecretIdentity;
+    console.log(stoleSecretIdentity)
+    console.log(hero.getSecretIdentity)
+    
+ #### 11 What is the output ?
+     var length = 10;
+    function fn() {
+     console.log(this.length);
+    }
+
+    var obj = {
+      length: 5,
+      method: function(fn) {
+        fn();
+        arguments[0]();
+      }
+    };
+
+    obj.method(fn, 1);
+    
+ #### 12 What is Output ?
+     var x = 21;
+    var girl = function () {
+        console.log(x);
+        var x = 20;
+    };
+    girl ();
+    
+ #### 13 What is Output ?
+     var variable = 10;
+    (()=>{
+       console.log(variable);
+       var variable = 20;
+       console.log(variable);
+    })();
+ - 10 20
+- undefined 20
+- 20 20
+    
+#### 14 What is OutPut?
+    var variable = 10;
+    (()=>{
+       console.log(variable);   // undefined
+       variable = 20;
+       console.log(variable);   // 20
+    })();
+    
+- 10 20
+- undefined 20
+- 20 20
     

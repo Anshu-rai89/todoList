@@ -273,3 +273,53 @@ console.log(person);
 - undefined 20
 - 20 20
     
+# Prototype Quiz 
+
+#### 1 What is output of code 
+                const fn = () => {};
+                console.log(typeof fn);
+                
+#### 2 The following code won’t print the persons's name? Can you explain why? And how can we fix it? 
+
+                function Person(name) {
+                  this.name = name;
+                }
+                Person.prototype.getName = () => {
+                  return this.name;
+                };
+                const tom = new Person('Tom');
+                console.log(tom.getName());
+                
+#### 3 What is output of code ?
+                class Person {}
+                class Employee extends person {}
+                class Developer extends Employee {}
+                const tom = new Developer();
+                
+                
+ - Object.getPrototypeOf(tom) === Developer.prototype; 
+ - Object.getPrototypeOf(tom) === Employee.prototype; 
+ - Developer.isPrototypeOf(tom); 
+ - Developer.prototype.isPrototypeOf(tom); 
+ - Employee.prototype.isPrototypeOf(tom); 
+ - Person.prototype.isPrototypeOf(tom); 
+ - Object.prototype.isPrototypeOf(tom); 
+ 
+#### 4 What is the difference between the classical and the prototypical inheritance?
+
+#### 5 After an object is created, for example using the new keyword, how can we access the prototype object that the instantiated object is linked to?
+
+#### 6 What is output of below code ?
+    const a = () => {};
+    function B() {}
+- typeof a; 
+- typeof B;
+- Object.getPrototypeOf(a);
+- Object.getPrototypeOf(B);
+- a.prototype; 
+- B.prototype;  
+    
+    
+
+
+

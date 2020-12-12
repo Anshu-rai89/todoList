@@ -318,7 +318,8 @@ console.log(person);
 - Object.getPrototypeOf(B);
 - a.prototype; 
 - B.prototype;  
-    
+ 
+#### 7 How does new key words works ?
     
 
 
